@@ -14,12 +14,27 @@
         "responses" : {
           "200" : {
             "description" : "Sucesso no retorno dos times",
-            "content" : { }
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "type" : "object",
+                    "properties" : {
+                      "id" : {
+                        "type" : "integer"
+                      },
+                      "nome" : {
+                        "type" : "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
-  },
-  "components" : { },
-  "x-original-swagger-version" : "2.0"
+  }
 }
