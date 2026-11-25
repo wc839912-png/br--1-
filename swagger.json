@@ -1,0 +1,27 @@
+{
+  "sqltools.connections" : [ {
+    "mysqlOptions" : {
+      "authProtocol" : "default",
+      "enableSsl" : "Disabled"
+    },
+    "ssh" : "Disabled",
+    "previewLimit" : 50,
+    "server" : "localhost3306",
+    "port" : 8082,
+    "driver" : "MySQL",
+    "name" : "root",
+    "username" : "root",
+    "database" : "brasileirao26"
+  } ],
+  "definitions" : {
+    "Model" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    }
+  }
+}
